@@ -14,8 +14,30 @@ To Implement Pseudorandom Number Generation Using Standard library.
 
 
 ## PROGRAM:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+int main() {
+    int n, i;
+
+    srand(time(0));
+
+    printf("Enter how many random numbers to generate: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++) {
+        printf("%d\n", rand());
+    }
+
+    return 0;
+}
+
+```
 ## OUTPUT:
+
+<img width="702" height="174" alt="image" src="https://github.com/user-attachments/assets/e92ffb98-a867-4cc6-bff8-707601943245" />
 
 ## RESULT:
 The Implementation of Pseudorandom Number Generation Using Standard library is successful.
